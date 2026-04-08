@@ -4,7 +4,7 @@ import { MapPin, MoveRight } from "lucide-react"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 
-export default function Cards({ id, img, roomType, bhk, amount, amountType, state, location, title }: { img: StaticImageData, roomType: string, amount: string, amountType: string, state: string, location: string | null, title: string, bhk: number, id: number }) {
+export default function Cards({ id, img,  amount, amountType, state, location, title }: { img: StaticImageData, roomType: string, amount: string, amountType: string, state: string, location: string | null, title: string, bhk: number, id: number }) {
 
     return (
         <div className="ring-1 ring-gray-300 hover:shadow-primary/20  rounded-lg flex flex-col gap-4 max-w-80 justify-center items-center h-80 hover:cursor-pointer hover:shadow-md p-2">

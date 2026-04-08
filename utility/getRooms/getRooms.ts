@@ -1,9 +1,10 @@
 import { DUMMY_DATA, LOCATION_IMAGES } from "@/data/dummy.data"
 
-export function getRooms(state: string | null) {
+export async function getRooms(state: string | null) {
+
     const PUNE_LOCATION_IMAGE = [...LOCATION_IMAGES].reverse()
     const DELHI_LOCATION_IMAGE = LOCATION_IMAGES.slice(4)
-
+    await new Promise((resolve) => setTimeout(resolve, 2000))
     return DUMMY_DATA.map((dummy, index) => {
 
         if (state === "Pune") {
